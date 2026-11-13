@@ -1,8 +1,5 @@
 #include "UART.h"
 
-
-
-
 void uart_init(void)
 {
 
@@ -11,7 +8,7 @@ void uart_init(void)
         .data_bits = UART_DATA_8_BITS,
         .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
         .parity = UART_PARITY_DISABLE,
-        .rx_flow_ctrl_thresh = NULL,
+        .rx_flow_ctrl_thresh = 0,
         .source_clk = UART_SCLK_APB,
         .stop_bits = UART_STOP_BITS_1,
     };
