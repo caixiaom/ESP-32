@@ -21,9 +21,10 @@ void ip_event_handler(void* event_handler_arg,esp_event_base_t event_base,int32_
 {
     if (event_id == IP_EVENT_STA_GOT_IP)
     {
-       esp_netif_ip_info_t *event = (esp_netif_ip_info_t *)event_data;
-       printf("%d.%d.%d.%d",esp_ip4_addr1_16(&event->ip),esp_ip4_addr2_16(&event->ip),esp_ip4_addr3_16(&event->ip),esp_ip4_addr4_16(&event->ip));
-       
+        ip_event_got_ip_t *event = (ip_event_got_ip_t *)event_data;
+        printf("got ip  : " IPSTR "\r\n", IP2STR(&event->ip_info.ip));
+        printf("netmask : " IPSTR "\r\n", IP2STR(&event->ip_info.netmask));
+        printf("gw      : " IPSTR "\r\n", IP2STR(&event->ip_info.gw));       
     }
 }
 
