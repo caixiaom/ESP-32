@@ -10,5 +10,12 @@
   "idf.customExtraVars": {
     "IDF_TARGET": "esp32"
   },
-  "idf.flashType": "UART"
+  "idf.flashType": "UART",
+
+  "cmake.cmakePath": "D:/Espressif/tools/cmake/3.24.0/bin/cmake.exe",
+  "cmake.configureOnOpen": false,
+  "cmake.configureOnEdit": false,
+  "cmake.automaticReconfigure": false,
+  "cmake.buildDirectory": "${workspaceFolder}/build/cmake-tools",
+  "makefile.configureOnOpen": false
 }
