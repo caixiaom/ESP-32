@@ -8,8 +8,8 @@
 #include "esp_netif_types.h"
 #include "esp_netif_ip_addr.h"
 
-#define SSID "caixiaomiao"
-#define PASSWORD "7213793a"
+#define SSID "caixiaomiaolegemi"
+#define PASSWORD "15836026897"
 
 void wifi_init(void);
 
